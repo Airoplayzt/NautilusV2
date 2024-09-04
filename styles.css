@@ -1,0 +1,168 @@
+@keyframes floatyThing {
+  0% {top: -5px;}
+  20% {top: -3px;}
+  40% {top: -1px;}
+  60% {top: 1px;}
+  80% {top: 3px;}
+  100% {top: 5px;}
+}
+
+@keyframes settingsSpin {
+  from {rotate: 0deg;}
+  to {rotate: 180deg;}
+}
+
+@keyframes bump {
+  0% {bottom: 0px;}
+  50% {bottom: 5px;}
+  100% {bottom: 0px;}
+}
+
+@keyframes hovered {
+  from {background-color: #3b3d40;}
+  to {background-color: grey;}
+}
+
+@font-face {
+  font-family: "Bungee Hairline";
+  src: url("BungeeHairline-Regular.ttf");
+}
+
+body {
+  text-align: center;
+  background-color: #3b3d40;
+  color: white;
+  font-family: sans-serif
+}
+
+h1#mainTitle {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 300%;
+  border: 3px solid white;
+  border-radius: .5em;
+  background-color: white;
+  color: #3b3d40;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  animation-name: floatyThing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 10%;
+}
+
+/*
+* I know repeating the same code twice with minimal changes is bad practice and everything,
+* but I don't know how else I can do this.
+*/
+
+h1 {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 300%;
+  border: 3px solid white;
+  border-radius: .5em;
+  background-color: white;
+  color: #3b3d40;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  animation-name: floatyThing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+input {
+  width: 75%;
+  font-family: monospace;
+  font-size: 250%;
+  border-radius: 1em;
+  background-color: darkgrey;
+  color: white;
+}
+
+button {
+  color: white;
+  font-size: 150%;
+  background-color: crimson;
+  border-radius: .5em;
+  display: inline;
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  margin-left: -8px;
+  margin-bottom: -5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-align: left;
+  background-color: #262729;
+  /* opacity: 0.5; */
+  width: 100%;
+  height: 5%;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #262729;
+  text-decoration: none;
+}
+
+div#flex-container {
+  position: relative;
+  margin-top: 5%;
+  border-radius: .5em;
+  left: 25%;
+  width: 50%;
+  user-select: none;
+  display: flex;
+}
+
+div#flex-container span {
+  font-size: 500%;
+}
+
+div#flex-container div {
+  border-radius: .5em;
+  margin-left: 8%;
+  margin-right: 5%;
+}
+
+div#flex-container div:hover {
+  animation-name: hovered;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+span#settings-icon:hover {
+  animation-name: settingsSpin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+span#apps-icon {
+  position: relative;
+}
+
+span#apps-icon:hover {
+  animation-name: bump;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
