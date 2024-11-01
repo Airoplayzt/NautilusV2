@@ -18,7 +18,7 @@ function randFlvrTxt() {
   var flvrTxts = ["Student owned and operated", "DON'T SHARE THIS", "Ok, now this is epic", "Have fun!",
   "Insert cash or select payment type", "Keep yourself safe", "Ya like jazz?", "Minecraft movie lookin fire 🔥",
   "Party rockers in the house tonight", "Come on down and buy some corn", "Caught lackin", "192.168.0.1", 
-  "google \"lego piece 32557\"", "What makes someone a criminal in 2077?", "Uncle Larry is approaching rapidly"];
+  "google \"lego piece 32557\"", "What makes someone a criminal in 2077?", "Uncle Larry is approaching rapidly", "Ambatublow"];
   var flvrTxtP = document.getElementById("flavorText");
   var randFlvrTxt = flvrTxts[Math.floor(Math.random()*flvrTxts.length)];
   flvrTxtP.innerHTML = "<strong>" + randFlvrTxt + "</strong>"
