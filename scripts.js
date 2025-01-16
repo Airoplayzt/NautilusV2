@@ -6,9 +6,6 @@ function genFunnyQuery() {
     "hardcore%20s3x", "hitler%20r34", "honey%20bun%20hot%20tub", "free%20onlyf@ns", "how%20to%20cure%20p0rn%20addiction", "j3rkmate",
     "trump%20x%20biden", "femboys", "belle%20delphine"];
     var randQuery = sillyQueries[Math.floor(Math.random()*sillyQueries.length)];
-    if (devFlag) {
-        alert(randQuery);
-    }
     var fullQuery = mainLink + randQuery;
     window.open(fullQuery);
 }
